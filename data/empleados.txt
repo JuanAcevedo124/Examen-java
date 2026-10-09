@@ -1,0 +1,2 @@
+4;Juan;1097103214;juan@gmail.com;gerente;10000.0
+5;Kevin;1097103214;kevin@gmail.com;profesor;5000.0
