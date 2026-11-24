@@ -1,5 +1,7 @@
 # CrediYa S.A.S. - Sistema de Préstamos y Cobros
 
+> Versión de examen. La versión actualizada está en [CrediYa](https://github.com/JuanAcevedo124/CrediYa).
+
 ## Descripción
 Sistema de consola en Java para gestionar empleados, clientes, préstamos y pagos.
 Persistencia dual: archivos `.txt` (siempre) + MySQL con JDBC (si hay conexión).
@@ -18,12 +20,12 @@ Persistencia dual: archivos `.txt` (siempre) + MySQL con JDBC (si hay conexión)
 - Conector ya incluido en `lib/mysql-connector-j.jar`
 
 ## Configurar clave MySQL
-Editar `src/com/crediya/util/DatabaseConnection.java`:
-```java
-private static final String PASSWORD = "TU_CLAVE";
+Escribir la contraseña local en `db.properties`, sin subirla a GitHub:
+```properties
+db.password=TU_CLAVE
 ```
 
-## Crear BD (PowerShell, NO usa < )
+## Crear la base de datos (PowerShell)
 ```powershell
 Get-Content "sql/schema.sql" | mysql -u root -p
 mysql -u root -p -e "USE crediya_db; SHOW TABLES;"
@@ -61,3 +63,9 @@ sql/schema.sql  lib/mysql-connector-j.jar  data/*.txt  docs/UML.puml
 
 ## UML
 Ver `docs/UML.puml` (abrir en https://plantuml.com o extensión PlantUML en VSCode).
+
+
+## Autor
+
+Juan José Acevedo Morales, desarrollador de software junior.
+[Portafolio](https://juanacevedo124.github.io/Portafolio/) | [GitHub](https://github.com/JuanAcevedo124) | [LinkedIn](https://www.linkedin.com/in/juan-acevedo-b24759450/)
